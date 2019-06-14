@@ -1,1 +1,1 @@
-https://github.com/anycraft/Launcher/releases/download/v1.0.0/Launcher.exe
+https://github.com/anycraft/Launcher/releases/download/v1.0.1/Launcher.exe
