@@ -32,8 +32,8 @@ namespace FreeLauncher
                     string UICurrentVerion = Application.ProductVersion;
                     if (UIWebVersion != UICurrentVerion)
                     {
-                        string UIUpdateFound = string.Format("An update is available\nYour Current version is: {0}\nNew Version is: {1}\n\nDo you want to update?", UICurrentVerion, UIWebVersion);
-                        DialogResult UIUpdaterChecker = MessageBox.Show(UIUpdateFound, "New Update Found", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                        string UIUpdateFound = string.Format("Hay una Actualizacion\nLa version actual es: {0}\nLa nueva version: {1}\n\nQuieres actualizar?", UICurrentVerion, UIWebVersion);
+                        DialogResult UIUpdaterChecker = MessageBox.Show(UIUpdateFound, "Nueva Actualizacion Encontrada", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                         if (UIUpdaterChecker == DialogResult.Yes)
                         {
                             UpdateLauncher = true;

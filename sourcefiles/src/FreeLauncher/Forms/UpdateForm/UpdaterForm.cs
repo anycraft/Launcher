@@ -56,11 +56,11 @@ namespace FreeLauncher.Forms.UpdateForm
         {
             if (!e.Cancelled && e.Error == null)
             {
-                MessageBox.Show("Download Completed\nUpdater Will now Close and Open Launcher", "Download Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Descarga Completada\nEl actualizador se cerrara y abrira el Launcher", "Descarga Completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 new Thread(() =>
                 {
                     Process.Start("cmd.exe",
-                    "/C Del " + Application.ExecutablePath + @"& MOVE /Y .\tmp\Launcher.exe .\ & rmdir .\tmp & start Launcher.exe");
+                    "/C timeout /T 1 & Del " + Application.ExecutablePath + @"& MOVE /Y .\tmp\Launcher.exe .\ & rmdir .\tmp & start Launcher.exe");
                     Environment.Exit(0);
                 }).Start();
             }
